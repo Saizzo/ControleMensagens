@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GUIControleMensagens
 {
     public partial class FormPrincipal : Form
     {
         private FormEnvioMensagem formEnvioMensagem;
+        private FormUsuario formUsuario;
         public FormPrincipal()
         {
             InitializeComponent();
@@ -25,6 +27,16 @@ namespace GUIControleMensagens
                 formEnvioMensagem = new FormEnvioMensagem();
             }
             formEnvioMensagem.ShowDialog(this);
+        }
+
+        private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formUsuario == null)
+            {
+                formUsuario = new FormUsuario();
+            }
+            formUsuario.ShowDialog(this);
+            
         }
     }
 }

@@ -36,5 +36,10 @@ namespace GUIControleMensagens
         {
 
         }
+
+        private void FormEnvioMensagem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
